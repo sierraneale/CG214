@@ -1,0 +1,258 @@
+*, *:before, *:after {box-sizing: border-box;}
+
+/*ALL PAGES GENERAL FORMATTING*/
+body {font-family: 'Roboto', sans-serif;margin: 50px;}
+#container {text-align: center;align-content: center }  
+#header{font-family: 'Audiowide', cursive;font-size: 40px;padding:50px;text-shadow: 3px 3px 9px white; opacity: 1 }
+#subheader{text-align: center; font-family: 'Audiowide', cursive;font-size: 30px;}
+
+
+/*MENU PAGE*/
+#menucontent{ font-family: 'Roboto', sans-serif;font-size: 16px;border:3px solid black;float: left;  width: 48%; padding: 25px ;
+    box-sizing: border-box;text-align:left; margin: 10px}
+#menucontent2{font-family: 'Roboto', sans-serif;font-size: 16px;border:3px solid black;float: right; width: 48%; padding: 25px ;
+    box-sizing: border-box;text-align: left;margin: 10px;}
+#menucontent3{font-family: 'Roboto', sans-serif;font-size: 16px;border:3px solid black;float: left;  width: 48%; padding: 25px ;
+    box-sizing: border-box;text-align:left; margin: 10px;}
+#menucontent4{font-family: 'Roboto', sans-serif;font-size: 16px;border:3px solid black;float: right;  width: 48%;padding: 25px ;
+    box-sizing: border-box;text-align:left; margin: 10px;}
+.menuheads{font-size: 18px;text-align: left;}
+span{text-align: left;}
+table{text-align: left;}
+th{text-align: left}
+
+/*Home Page ,FAQs and menupage headers.. thank you!*/
+#headerbackground{ 
+    height: 400px;
+	align-content: center;
+    position: relative;
+    overflow: hidden;}
+
+#headerbackground h1 {
+    z-index: 2;
+    font-family: 'Audiowide', cursive;
+    font-size: 80px;padding:50px;text-shadow: 3px 3px 9px white; opacity: 1;}
+
+#headerbackground img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    z-index: -1;}
+
+/*SLIDESHOW CSS and HTML based on example from codepen( https://codepen.io/jfdorn/pen/ojQdba), WISH I COULD HAVE BUTTONS on the right and left sides so the images could be changed manually as well*/		
+#slideshow {align-content: center;}
+#slideshow img{position:absolute;width:700px; height:450px; content-align: center; opacity:0;animation:round 16s infinite; padding: 50px;}
+			@keyframes round {
+				25% {opacity:1}
+				40% {opacity:0}}
+		#slideshow	img:nth-child(1){animation-delay:12s}
+		#slideshow	img:nth-child(2){animation-delay:8s}
+		#slideshow	img:nth-child(3){animation-delay:4s}
+		#slideshow img:nth-child(4){animation-delay:0s}
+
+/*paragrapgh on home page*/
+#paragraph{float: right;text-align: right; }
+#paragraph h3{font-family: 'Audiowide', cursive;text-align: right;}
+#paragraph p{font-family: 'Roboto', sans-serif; text-align:right }
+
+/*about page*/
+#aboutbackgroundheader{
+   height: 400px;
+	align-content: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#aboutbackgroundheader h1 {
+    z-index: 2;
+    font-family: 'Audiowide', cursive;
+    font-size: 80px;padding:50px;text-shadow: 3px 3px 9px white; opacity: 1
+}
+
+#aboutbackgroundheader img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+	z-index: -1;}
+
+
+/*FAQ section CODEPEN REFERENCE; http://codepen.io/drehimself/pen/mdxqH*/
+.FAQ{width: 700px;
+  font:20px/24px "Roboto", sans-serif;
+  color: #000000;
+  background-color: white;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 5px;}
+
+p { margin-bottom: 10px;}
+
+
+.hide { display: none;}
+
+dt {
+  font-size: 24px;
+  color: #18997f;font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 26px;
+}
+
+dd {
+  padding: 20px;
+  background: #FDFCFA;
+  border-radius: 5px;
+  border: 1px solid #F2EEE6;
+  margin: 20px 0 30px;
+  position: relative;
+}
+
+
+
+/*FAQs PAGE NEW FORM: CODE PEN SOURCE http://codepen.io/rexkirby/pen/Fdnlz */
+#form-div{    background:url(https://s3-media1.fl.yelpcdn.com/bphoto/Ufh99JeH2iKmeTv0O9n5ag/o.jpg) no-repeat;
+  background-size: cover;
+ width: 450px;align-content: center;}
+#form-div h3{align-content: center; text-shadow: 3px 3px 9px white;}
+#feedback-page{
+	text-align:center;z-index: -1;}
+
+
+#form-main{
+	width:100%;
+	float:right;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	position: absolute;
+	left: 50%;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: 'Roboto', sans-serif;
+  font-weight:500;
+	font-size: 16px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+ /*buttons on all pages*/
+ #buttons{text-align: center}
+ button:hover {background-color:black;
+       color:white;
+       padding: 14px 40px;
+       border-radius: 12px;} 
+
+button { background-color: white; 
+    border:solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;} 
+/*transition part is from W3 schools*/
