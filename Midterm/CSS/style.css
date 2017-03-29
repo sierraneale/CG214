@@ -43,8 +43,8 @@ th{text-align: left}
     z-index: -1;}
 
 /*SLIDESHOW CSS and HTML based on example from codepen( https://codepen.io/jfdorn/pen/ojQdba), WISH I COULD HAVE BUTTONS on the right and left sides so the images could be changed manually as well*/		
-#slideshow {align-content: center;}
-#slideshow img{position:absolute;width:700px; height:450px;  opacity:0;animation:round 16s infinite; padding: 50px;}
+#slideshow {float: left; align-content:center;}
+#slideshow img{position:absolute;width:700px; height:450px; opacity:0;animation:round 16s infinite; padding: 50px;}
 			@keyframes round {
 				25% {opacity:1}
 				40% {opacity:0}}
@@ -54,7 +54,7 @@ th{text-align: left}
 		#slideshow img:nth-child(4){animation-delay:0s}
 
 /*paragrapgh on home page*/
-#paragraph{float: left;text-align: left; }
+#paragraph{float:inherit;text-align: left; }
 #paragraph h3{font-family: 'Audiowide', cursive;text-align: left;}
 #paragraph p{font-family: 'Roboto', sans-serif; text-align:left }
 
