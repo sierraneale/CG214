@@ -44,7 +44,7 @@ th{text-align: left}
 
 /*SLIDESHOW CSS and HTML based on example from codepen( https://codepen.io/jfdorn/pen/ojQdba), WISH I COULD HAVE BUTTONS on the right and left sides so the images could be changed manually as well*/
 #container #paragraph{text-align: left;}
-#slideshow {float: reft; align-content:center;}
+#slideshow {float: reft; align-content:center;text-align: left;}
 #slideshow img{position:absolute;width:700px; height:450px; opacity:0;animation:round 16s infinite; padding: 50px;}
 			@keyframes round {
 				25% {opacity:1}
