@@ -54,9 +54,9 @@ th{text-align: left}
 		#slideshow img:nth-child(4){animation-delay:0s}
 
 /*paragrapgh on home page*/
-#paragraph{float:inherit;text-align: left; }
-#paragraph h3{font-family: 'Audiowide', cursive;text-align: left;}
-#paragraph p{font-family: 'Roboto', sans-serif; text-align:left }
+#paragraph{float:inherit;text-align: right; }
+#paragraph h3{font-family: 'Audiowide', cursive;text-align: right;}
+#paragraph p{font-family: 'Roboto', sans-serif; text-align:right; }
 
 /*about page*/
 #aboutbackgroundheader{
