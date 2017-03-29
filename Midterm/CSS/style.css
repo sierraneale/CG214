@@ -42,8 +42,9 @@ th{text-align: left}
     opacity: 0.4;
     z-index: -1;}
 
-/*SLIDESHOW CSS and HTML based on example from codepen( https://codepen.io/jfdorn/pen/ojQdba), WISH I COULD HAVE BUTTONS on the right and left sides so the images could be changed manually as well*/		
-#slideshow {float: left; align-content:center;}
+/*SLIDESHOW CSS and HTML based on example from codepen( https://codepen.io/jfdorn/pen/ojQdba), WISH I COULD HAVE BUTTONS on the right and left sides so the images could be changed manually as well*/
+#container #paragraph{text-align: right;}
+#slideshow {float: reft; align-content:center;}
 #slideshow img{position:absolute;width:700px; height:450px; opacity:0;animation:round 16s infinite; padding: 50px;}
 			@keyframes round {
 				25% {opacity:1}
