@@ -1,0 +1,197 @@
+
+/* CSS Document */
+
+*, *:before, *:after {box-sizing: border-box;}
+
+/*ALL PAGES GENERAL FORMATTING*/
+/*FONTS*/
+body {font-family:'Archivo Black', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{font-family:'Raleway', sans-serif; font-weight: 300;}
+a{font-family: 'Archivo Black', sans-serif;}
+
+/*LINK STYLE*/
+#link {font-family:'Raleway', sans-serif;}
+
+/*Header*/
+#headerbackground{ 
+    height: 120px;
+	align-content: center;
+    position: relative;
+    overflow: hidden;}
+ 
+#headerbackground img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.;
+    z-index: -1;}
+
+#buttons{text-align: right; padding-right: 50px; padding-top: 30px; }
+/*buttons*/
+button {
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    font-family:'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+button:hover {
+    color: teal;
+    background-color: #fff;
+}
+.catalog{padding: 10px;
+	
+}
+#catalog{align-content: center; text-align: center;
+	
+}
+
+
+/* FROM CODE PEN: Took a while to figure it out and edit it to work for me. and add more slides and make them work properly, but i did it! :)
+
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 100%; /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 600px;
+	width: 100%;
+	background: none 100% no-repeat;
+	background-size: cover; 100%;}
+
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       30px;
+	height:      30px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s5:target ~ .bullets >*:nth-child(5) {background: rgba(255, 255, 255,   1);}
+#s6:target ~ .bullets >*:nth-child(6) {background: rgba(255, 255, 255,   1);}
+#s7:target ~ .bullets >*:nth-child(7) {background: rgba(255, 255, 255,   1);}
+#s8:target ~ .bullets >*:nth-child(8) {background: rgba(255, 255, 255,   1);}
+#s9:target ~ .bullets >*:nth-child(9) {background: rgba(255, 255, 255,   1);}
+#s10:target ~ .bullets >*:nth-child(10) {background: rgba(255, 255, 255,   1);}
+#s11:target ~ .bullets >*:nth-child(11) {background: rgba(255, 255, 255,   1);}
+
+/* More slides? Add here more rules */
+
+
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s5:target ~ .prevNext >*:nth-child(5) {visibility: visible;}
+#s6:target ~ .prevNext >*:nth-child(6) {visibility: visible;}
+#s7:target ~ .prevNext >*:nth-child(7) {visibility: visible;}
+#s8:target ~ .prevNext >*:nth-child(8) {visibility: visible;}
+#s9:target ~ .prevNext >*:nth-child(9) {visibility: visible;}
+#s10:target ~ .prevNext >*:nth-child(10) {visibility: visible;}
+#s11:target ~ .prevNext >*:nth-child(11) {visibility: visible;}
+
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider { -webkit-transform: translateX(   0%);transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s5:target ~ .slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
+#s6:target ~ .slider {transform: translateX(-500%); -webkit-transform: translateX(-500%);}
+#s7:target ~ .slider {transform: translateX(-600%); -webkit-transform: translateX(-600%);}
+#s8:target ~ .slider {transform: translateX(-700%); -webkit-transform: translateX(-700%);}
+#s9:target ~ .slider {transform: translateX( -800%); -webkit-transform: translateX( -800%);}
+#s10:target ~ .slider {transform: translateX(-900%); -webkit-transform: translateX(-900%);}
+#s11:target ~ .slider {transform: translateX(-1000%); -webkit-transform: translateX(-1000%);}
+
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+.CSSgal .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 4em;
+}
+.CSSgal a {
+	border-radius: 35%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
