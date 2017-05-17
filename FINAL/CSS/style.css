@@ -11,10 +11,27 @@ body {font-family:'Archivo Black', sans-serif;
 }
 
 h1{font-family:'Raleway', sans-serif; font-weight: 300;}
+h3{text-align: center;font-family:'Raleway', sans-serif;}
 a{font-family: 'Archivo Black', sans-serif;}
 
+/*list items on inspiration page*/
+li{font-family:'Roboto Condensed', sans-serif; }
+
+#table{
+    font-family: 'Roboto Condensed', sans-serif;
+    border-collapse: collapse;
+    width: 50%; margin-left: 460px;
+}
+#table2{
+    font-family: 'Roboto Condensed', sans-serif;
+    border-collapse: collapse;
+    width: 75%; margin-left: 250px;margin-right: 250px;
+}
+
+
+
 /*LINK STYLE*/
-#link {font-family:'Raleway', sans-serif;}
+#link {font-family:'Raleway', sans-serif;color:crimson;text-decoration-color: crimson;text-decoration: underline;}
 
 /*Header*/
 #headerbackground{ 
